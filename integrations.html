@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Integrations | AIGrow Nexus</title>
+  <meta name="description" content="AIGrow Nexus integrations for SMEs: ERP, CRM, email, WhatsApp, databases, spreadsheets, and marketing platforms via API, webhooks, files, and secure credentials." />
+  <link rel="canonical" href="https://aigrownexus.com/integrations.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Integrations | AIGrow Nexus" />
+  <meta property="og:description" content="Connect ERP, CRM, messaging, databases and marketing tools via APIs and webhooks with governance." />
+  <meta property="og:url" content="https://aigrownexus.com/integrations.html" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --muted:#a9b4d0; --text:#eaf0ff; --brand:#00a499;
+      --line:rgba(255,255,255,.12); --shadow:0 18px 50px rgba(0,0,0,.35);
+      --max:1080px; --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% 0%,rgba(0,164,153,.25),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 70px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;background:rgba(11,18,32,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;z-index:10}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#4ad6c9);box-shadow:0 8px 20px rgba(0,164,153,.25)}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{opacity:.9;text-decoration:none;padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04)}
+    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .btn.primary{background:var(--brand);border-color:transparent;color:#041313;font-weight:700}
+    .panel{background:rgba(17,26,46,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    h1{font-size:34px;line-height:1.15;margin:18px 0 8px}
+    h2{font-size:20px;margin:0 0 10px}
+    .sub,.muted{color:var(--muted)}
+    section{padding:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:rgba(17,26,46,.55);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+    .card h3{margin:0 0 8px;font-size:16px}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    .table{width:100%;border-collapse:collapse;margin-top:10px}
+    .table th,.table td{border:1px solid var(--line);padding:10px;vertical-align:top}
+    .table th{background:rgba(255,255,255,.04);text-align:left}
+    details{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.03)}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+    footer{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}header{position:relative}}
+  </style>
+
+  <!-- AEO FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"How does AIGrow Nexus integrate with ERP and other business systems?",
+        "acceptedAnswer":{"@type":"Answer","text":"AIGrow Nexus integrates using APIs, webhooks, databases, and file exchange. It maps required data fields, validates inputs, and orchestrates workflows with approvals and audit trails."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do we need developers to integrate our systems?",
+        "acceptedAnswer":{"@type":"Answer","text":"Often no. Many integrations can be done using standard connectors and API keys. For custom ERPs or special requirements, light technical support may be needed for API access and data mapping."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="/">
+      <span class="logo" aria-hidden="true"></span>
+      <b>AIGrow Nexus</b>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/use-cases.html">Use Cases</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/security.html">Security</a>
+      <a href="/integrations.html">Integrations</a>
+      <a href="/compare.html">Compare</a>
+    </nav>
+    <div class="cta">
+      <a class="btn" href="/">Home</a>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Integration%20Checklist">Get Integration Checklist</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel">
+      <h1>Integrations</h1>
+      <p class="sub">
+        <b>Direct answer:</b> AIGrow Nexus integrates ERP, CRM, messaging, databases, spreadsheets, and marketing tools using APIs,
+        webhooks, database connections, and file exchange—then orchestrates workflows with governance.
+      </p>
+    </div>
+
+    <section>
+      <h2>Common integration categories</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>ERP</h3>
+          <p class="muted">Sales orders, invoices, inventory, customers, vendors, pricing, postings.</p>
+          <ul>
+            <li>API / service layer / OData</li>
+            <li>Database read (where allowed)</li>
+            <li>File exchange (CSV/Excel)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>CRM & Sales</h3>
+          <p class="muted">Lead capture, routing, follow-up, pipeline updates, handover to ERP.</p>
+          <ul>
+            <li>Web forms</li>
+            <li>CRM APIs</li>
+            <li>Assignment rules</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Marketing & Messaging</h3>
+          <p class="muted">Email, WhatsApp, campaigns, audiences, notifications, reminders.</p>
+          <ul>
+            <li>Email providers</li>
+            <li>WhatsApp messaging</li>
+            <li>Campaign triggers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Typical integration methods</h2>
+      <table class="table" aria-label="Integration methods table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>When to use</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>API</td>
+            <td>Modern systems with stable endpoints</td>
+            <td>Best for reliability and governance; supports validation and retries</td>
+          </tr>
+          <tr>
+            <td>Webhooks</td>
+            <td>Event-driven triggers (new lead, new order, status change)</td>
+            <td>Fast response; great for real-time automation</td>
+          </tr>
+          <tr>
+            <td>Database</td>
+            <td>Reporting extraction / controlled reads</td>
+            <td>Use least-privilege and avoid direct writes unless approved</td>
+          </tr>
+          <tr>
+            <td>File exchange (CSV/Excel)</td>
+            <td>Legacy systems or batch workflows</td>
+            <td>Good for MVP; add data validation and clear ownership</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin:0 0 10px">What we typically need from your team</h2>
+      <ul>
+        <li><b>System list:</b> ERP/CRM/email/WhatsApp/database/spreadsheets/ads platforms</li>
+        <li><b>Access method:</b> API keys, OAuth, service accounts, or database read credentials</li>
+        <li><b>Data fields:</b> required fields and definitions (e.g., customer ID, item code, price, stock)</li>
+        <li><b>Process owner:</b> person who confirms business rules and approves workflow outcomes</li>
+        <li><b>Governance:</b> who approves changes and who receives exception alerts</li>
+      </ul>
+      <p class="muted" style="margin-top:10px">
+        For security practices, see <a href="/security.html">Security</a>.
+      </p>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2 style="margin:0 0 10px">FAQ (AEO)</h2>
+
+      <details>
+        <summary>How does AIGrow Nexus integrate with ERP and other business systems?</summary>
+        <div class="muted">AIGrow Nexus integrates using APIs, webhooks, databases, and file exchange. It maps required data fields, validates inputs, and orchestrates workflows with approvals and audit trails.</div>
+      </details>
+
+      <details>
+        <summary>Do we need developers to integrate our systems?</summary>
+        <div class="muted">Often no. Many integrations can be done using standard connectors and API keys. For custom ERPs or special requirements, light technical support may be needed for API access and data mapping.</div>
+      </details>
+
+      <details>
+        <summary>Can we start with partial integration for MVP?</summary>
+        <div class="muted">Yes. Many SMEs start with one or two systems (e.g., CRM + email, or ERP + reporting) and expand after the MVP proves ROI.</div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin:0 0 10px">Want an integration plan for your systems?</h2>
+      <p class="muted" style="margin:0 0 14px">Send your system list and one workflow goal. We’ll propose a safe MVP integration approach.</p>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Integration%20Plan%20Request">Request Integration Plan</a>
+    </section>
+
+    <footer>
+      © <span id="y"></span> AIGrow Nexus · <a href="mailto:hello@aigrownexus.com">hello@aigrownexus.com</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </main>
+</body>
+</html>
