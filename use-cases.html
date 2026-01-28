@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Use Cases | AIGrow Nexus</title>
+  <meta name="description" content="Explore MVP-ready automation use cases for SMEs: inventory-aware campaigns, lead-to-quote-to-invoice, reporting refresh, and operations approvals with audit trails." />
+  <link rel="canonical" href="https://aigrownexus.com/use-cases.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Use Cases | AIGrow Nexus" />
+  <meta property="og:description" content="MVP-ready automation use cases for SMEs: inventory-aware campaigns, quote-to-cash, reporting, and governance." />
+  <meta property="og:url" content="https://aigrownexus.com/use-cases.html" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --card:#111a2e; --muted:#a9b4d0; --text:#eaf0ff;
+      --brand:#00a499; --line:rgba(255,255,255,.12); --shadow:0 18px 50px rgba(0,0,0,.35);
+      --max:1080px; --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% 0%,rgba(0,164,153,.25),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 70px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;background:rgba(11,18,32,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;z-index:10}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#4ad6c9);box-shadow:0 8px 20px rgba(0,164,153,.25)}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{opacity:.9;text-decoration:none;padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04)}
+    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .btn.primary{background:var(--brand);border-color:transparent;color:#041313;font-weight:700}
+    h1{font-size:34px;line-height:1.15;margin:18px 0 8px}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .panel{background:rgba(17,26,46,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:rgba(17,26,46,.55);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+    .card h2{font-size:16px;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.03);margin-right:8px;margin-bottom:10px}
+    section{padding:18px 0}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    .mini{font-size:13px;color:var(--muted)}
+    footer{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}header{position:relative}}
+  </style>
+
+  <!-- FAQ schema (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What are the best first automation use cases for SMEs?",
+        "acceptedAnswer":{"@type":"Answer","text":"Common first wins include lead routing and follow-up, quotation reminders, invoice reminders, inventory alerts, and scheduled reporting refresh with data checks."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can AIGrow Nexus trigger marketing campaigns based on inventory?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Inventory and sales signals can trigger promotion workflows such as slow-moving stock alerts, discount campaigns, and targeted outreach, with approvals if required."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="/">
+      <span class="logo" aria-hidden="true"></span>
+      <b>AIGrow Nexus</b>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/use-cases.html">Use Cases</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/security.html">Security</a>
+      <a href="/integrations.html">Integrations</a>
+      <a href="/compare.html">Compare</a>
+    </nav>
+    <div class="cta">
+      <a class="btn" href="/">Home</a>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Use%20Case%20Discussion">Discuss a Use Case</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel">
+      <h1>Use Cases (MVP-ready)</h1>
+      <p class="sub">
+        Practical automations that SMEs can implement first—focused on measurable impact and controlled operations.
+        Each use case can include approvals, audit logs, retries, and exception handling.
+      </p>
+      <span class="tag">Owner outcomes</span>
+      <span class="tag">IT-ready</span>
+      <span class="tag">AEO-friendly answers</span>
+    </div>
+
+    <section>
+      <div class="grid">
+        <div class="card">
+          <h2>1) Inventory → Campaign Trigger</h2>
+          <p class="muted">Use inventory and sales signals to trigger promotions and sales actions automatically.</p>
+        </div>
+        <div class="card">
+          <h2>2) Lead → Quote → Invoice</h2>
+          <p class="muted">Capture leads, route to owners, generate quote drafts, and hand off to invoicing with approvals.</p>
+        </div>
+        <div class="card">
+          <h2>3) Reporting → Dashboard Refresh</h2>
+          <p class="muted">Automate data refresh and KPI dashboards on schedule with data quality checks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="panel">
+        <h2 style="margin:0 0 8px">Use Case 1: Inventory → Campaign Trigger</h2>
+        <p class="muted" style="margin:0">
+          <b>Direct answer:</b> When stock is slow-moving or overstocked, AIGrow Nexus can trigger a promotion workflow automatically,
+          with optional approval before publishing.
+        </p>
+        <ul>
+          <li><b>Input signals:</b> stock on hand, ageing days, turnover, margin, category, seasonality</li>
+          <li><b>Actions:</b> promo recommendations, email/WhatsApp outreach, ads audience sync, price file export</li>
+          <li><b>Controls:</b> approval step for discount rules, audit log of changes, rollback plan</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Example: If turnover below threshold for 30 days → create promo draft → manager approval → send to channels.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin:0 0 8px">Use Case 2: Lead → Quote → Invoice</h2>
+        <p class="muted" style="margin:0">
+          <b>Direct answer:</b> AIGrow Nexus routes leads to the right owner, collects required details, prepares quote drafts,
+          and coordinates follow-ups until invoicing.
+        </p>
+        <ul>
+          <li><b>Input signals:</b> web form, WhatsApp enquiry, email leads, CRM pipeline stage</li>
+          <li><b>Actions:</b> lead qualification, assignment rules, quote template draft, reminders, handoff to invoicing</li>
+          <li><b>Controls:</b> approval for quote value thresholds, audit trail, exception handling if fields missing</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Example: New lead → qualify → quote draft → approval if above threshold → send quote → reminder sequence → invoice handoff.
+        </p>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="panel">
+        <h2 style="margin:0 0 8px">Use Case 3: Reporting → Dashboard Refresh</h2>
+        <p class="muted" style="margin:0">
+          <b>Direct answer:</b> Schedule data extraction and refresh dashboards with data checks so KPIs are timely and trustworthy.
+        </p>
+        <ul>
+          <li><b>Input signals:</b> schedule, file arrival, database snapshot, ERP posting completion</li>
+          <li><b>Actions:</b> extract/transform/load, refresh dashboard, send KPI summary to teams</li>
+          <li><b>Controls:</b> data quality checks, alerts on anomalies, audit log of refresh runs</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Example: Daily 7am refresh → validate totals vs yesterday → publish dashboard → send summary → alert exceptions.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin:0 0 8px">Other high-impact MVP use cases</h2>
+        <ul>
+          <li><b>Invoice reminders:</b> overdue → sequence reminders → escalation</li>
+          <li><b>Purchase follow-ups:</b> delayed delivery → supplier chase → ETA updates</li>
+          <li><b>Approvals workflow:</b> discount, credit limit, price change, vendor onboarding</li>
+          <li><b>Data cleanup:</b> duplicate customers/vendors → merge suggestions → approval</li>
+          <li><b>Service scheduling:</b> ticket intake → assignment → reminders → closure survey</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Want a tailored list? Email us your systems and 2–3 processes to automate first.
+        </p>
+        <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20MVP%20Use%20Cases%20Request">Request MVP Use Case Map</a>
+      </div>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2 style="margin:0 0 10px">FAQ (AEO)</h2>
+      <p class="muted" style="margin:0 0 12px">
+        <b>What are the best first automation use cases for SMEs?</b><br/>
+        Common first wins include lead routing and follow-up, quotation reminders, invoice reminders, inventory alerts, and scheduled reporting refresh with data checks.
+      </p>
+      <p class="muted" style="margin:0">
+        <b>Can AIGrow Nexus trigger marketing campaigns based on inventory?</b><br/>
+        Yes. Inventory and sales signals can trigger promotion workflows such as slow-moving stock alerts, discount campaigns, and targeted outreach, with approvals if required.
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> AIGrow Nexus · <a href="mailto:hello@aigrownexus.com">hello@aigrownexus.com</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </main>
+</body>
+</html>
