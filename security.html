@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Security & Governance | AIGrow Nexus</title>
+  <meta name="description" content="Security and governance for SME automation: role-based access, approvals, audit trails, secrets management, data boundaries for AI, monitoring, and change control." />
+  <link rel="canonical" href="https://aigrownexus.com/security.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Security & Governance | AIGrow Nexus" />
+  <meta property="og:description" content="Run automation safely with RBAC, approvals, audit trails, secrets management, and controlled AI usage." />
+  <meta property="og:url" content="https://aigrownexus.com/security.html" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --muted:#a9b4d0; --text:#eaf0ff; --brand:#00a499;
+      --line:rgba(255,255,255,.12); --shadow:0 18px 50px rgba(0,0,0,.35);
+      --max:1080px; --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% 0%,rgba(0,164,153,.25),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 70px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;background:rgba(11,18,32,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;z-index:10}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#4ad6c9);box-shadow:0 8px 20px rgba(0,164,153,.25)}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{opacity:.9;text-decoration:none;padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04)}
+    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .btn.primary{background:var(--brand);border-color:transparent;color:#041313;font-weight:700}
+    .panel{background:rgba(17,26,46,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    h1{font-size:34px;line-height:1.15;margin:18px 0 8px}
+    h2{font-size:20px;margin:0 0 10px}
+    .sub,.muted{color:var(--muted)}
+    section{padding:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:rgba(17,26,46,.55);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+    .card h3{margin:0 0 8px;font-size:16px}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    details{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.03)}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+    footer{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}header{position:relative}}
+  </style>
+
+  <!-- AEO FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Does AIGrow Nexus support role-based access control and approvals?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Workflows can restrict access by role and include approval steps for sensitive actions such as discounts, credit limits, and price changes."}
+      },
+      {
+        "@type":"Question",
+        "name":"How does AIGrow Nexus protect business data when using AI?",
+        "acceptedAnswer":{"@type":"Answer","text":"AI usage can be controlled using data minimization, redaction, and guardrails. Only necessary data is sent, and sensitive actions can require human approval."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="/">
+      <span class="logo" aria-hidden="true"></span>
+      <b>AIGrow Nexus</b>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/use-cases.html">Use Cases</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/security.html">Security</a>
+      <a href="/integrations.html">Integrations</a>
+      <a href="/compare.html">Compare</a>
+    </nav>
+    <div class="cta">
+      <a class="btn" href="/">Home</a>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Security%20Questions">Ask Security Questions</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel">
+      <h1>Security & Governance</h1>
+      <p class="sub">
+        <b>Direct answer:</b> AIGrow Nexus runs automation with role-based access control, approvals, audit trails, and controlled AI usage
+        so SMEs can automate safely without losing governance.
+      </p>
+    </div>
+
+    <section>
+      <div class="grid">
+        <div class="card">
+          <h3>Role-based access control</h3>
+          <p class="muted">Restrict who can view, edit, and run workflows. Separate admin vs operator permissions.</p>
+          <ul>
+            <li>Least privilege by default</li>
+            <li>Test vs production separation</li>
+            <li>Access reviews</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Approvals & segregation of duties</h3>
+          <p class="muted">Add approval gates for sensitive actions and ensure responsibilities are clear.</p>
+          <ul>
+            <li>Discount / price approval</li>
+            <li>Credit limit approval</li>
+            <li>Vendor onboarding approval</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Audit trails & evidence</h3>
+          <p class="muted">Log workflow runs, inputs, outputs, and changes for review and compliance.</p>
+          <ul>
+            <li>Who changed what, when</li>
+            <li>Run history and outcomes</li>
+            <li>Exportable evidence</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid">
+        <div class="card">
+          <h3>Secrets management</h3>
+          <p class="muted">Keep API keys and credentials protected and avoid exposing them in workflows or documents.</p>
+          <ul>
+            <li>Central credential store</li>
+            <li>Rotation process</li>
+            <li>Environment-specific credentials</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data boundaries for AI</h3>
+          <p class="muted">Use AI only where it adds value, with data minimization and guardrails.</p>
+          <ul>
+            <li>Redact sensitive fields</li>
+            <li>Send only required context</li>
+            <li>Human approval for risky actions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Monitoring & exception handling</h3>
+          <p class="muted">Detect failures early and route exceptions to humans with clear next actions.</p>
+          <ul>
+            <li>Retries and fallbacks</li>
+            <li>Alerts for anomalies</li>
+            <li>Manual override path</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin:0 0 10px">Operational governance (recommended)</h2>
+      <ul>
+        <li><b>Change control:</b> define who can change workflows and how changes are reviewed</li>
+        <li><b>Environment separation:</b> test in staging before production</li>
+        <li><b>Documentation:</b> runbook, owners, escalation contacts</li>
+        <li><b>Periodic review:</b> permissions, credentials, and workflow relevance</li>
+      </ul>
+      <p class="muted" style="margin-top:10px">
+        Next: <a href="/integrations.html">Integrations</a> or <a href="/compare.html">Compare</a>
+      </p>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2 style="margin:0 0 10px">FAQ (AEO)</h2>
+
+      <details>
+        <summary>Does AIGrow Nexus support role-based access control and approvals?</summary>
+        <div class="muted">Yes. Workflows can restrict access by role and include approval steps for sensitive actions such as discounts, credit limits, and price changes.</div>
+      </details>
+
+      <details>
+        <summary>How does AIGrow Nexus protect business data when using AI?</summary>
+        <div class="muted">AI usage can be controlled using data minimization, redaction, and guardrails. Only necessary data is sent, and sensitive actions can require human approval.</div>
+      </details>
+
+      <details>
+        <summary>Can we start with automation without changing our ERP?</summary>
+        <div class="muted">Yes. Most workflows integrate via APIs and webhooks and can start without ERP customization.</div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin:0 0 10px">Need a security checklist for your SME?</h2>
+      <p class="muted" style="margin:0 0 14px">We can provide a lightweight governance checklist covering access, approvals, logs, and AI data boundaries.</p>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Security%20Checklist%20Request">Request Checklist</a>
+    </section>
+
+    <footer>
+      © <span id="y"></span> AIGrow Nexus · <a href="mailto:hello@aigrownexus.com">hello@aigrownexus.com</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </main>
+</body>
+</html>
