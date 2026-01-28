@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>How It Works | AIGrow Nexus</title>
+  <meta name="description" content="How AIGrow Nexus delivers AI workflow automation for SMEs: discover, connect, orchestrate, govern, measure, and improve—built for ERP + CRM + marketing integrations." />
+  <link rel="canonical" href="https://aigrownexus.com/how-it-works.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How It Works | AIGrow Nexus" />
+  <meta property="og:description" content="Discover → Connect → Orchestrate → Govern → Measure → Improve. An MVP-friendly approach for SMEs." />
+  <meta property="og:url" content="https://aigrownexus.com/how-it-works.html" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --muted:#a9b4d0; --text:#eaf0ff; --brand:#00a499;
+      --line:rgba(255,255,255,.12); --shadow:0 18px 50px rgba(0,0,0,.35);
+      --max:1080px; --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% 0%,rgba(0,164,153,.25),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 70px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;background:rgba(11,18,32,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;z-index:10}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#4ad6c9);box-shadow:0 8px 20px rgba(0,164,153,.25)}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{opacity:.9;text-decoration:none;padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04)}
+    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .btn.primary{background:var(--brand);border-color:transparent;color:#041313;font-weight:700}
+    .panel{background:rgba(17,26,46,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    h1{font-size:34px;line-height:1.15;margin:18px 0 8px}
+    h2{font-size:20px;margin:0 0 10px}
+    .sub,.muted{color:var(--muted)}
+    section{padding:18px 0}
+    .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .step{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+    .step b{display:block;margin-bottom:4px}
+    .list{margin:8px 0 0 18px;color:var(--muted)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .mini{font-size:13px;color:var(--muted)}
+    details{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.03)}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+    footer{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media (max-width:920px){.steps{grid-template-columns:1fr}.two{grid-template-columns:1fr}header{position:relative}}
+  </style>
+
+  <!-- HowTo schema (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How AIGrow Nexus implements AI workflow automation for SMEs",
+    "description":"A practical, governed approach to connect ERP, CRM and marketing tools and automate workflows with approvals and audit trails.",
+    "step":[
+      {"@type":"HowToStep","name":"Discover","text":"Map the process, systems, approvals, and success metrics."},
+      {"@type":"HowToStep","name":"Connect","text":"Integrate ERP/CRM/email/WhatsApp/databases via APIs and webhooks."},
+      {"@type":"HowToStep","name":"Orchestrate","text":"Build workflows with routing, validation, retries, and exception handling."},
+      {"@type":"HowToStep","name":"Govern","text":"Add role-based access control, approvals, audit logs, and secrets management."},
+      {"@type":"HowToStep","name":"Measure","text":"Track ROI: time saved, error reduction, cycle time, and conversion lift."},
+      {"@type":"HowToStep","name":"Improve","text":"Iterate and expand to the next workflow once the MVP is stable."}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="/">
+      <span class="logo" aria-hidden="true"></span>
+      <b>AIGrow Nexus</b>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/use-cases.html">Use Cases</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/security.html">Security</a>
+      <a href="/integrations.html">Integrations</a>
+      <a href="/compare.html">Compare</a>
+    </nav>
+    <div class="cta">
+      <a class="btn" href="/">Home</a>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20MVP%20Blueprint">Get MVP Blueprint</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel">
+      <h1>How It Works</h1>
+      <p class="sub">
+        <b>Direct answer:</b> AIGrow Nexus connects your ERP, CRM and marketing tools and orchestrates workflows with validation,
+        approvals, audit trails, and exception handling—so SMEs can automate safely and measure ROI.
+      </p>
+    </div>
+
+    <section>
+      <h2>Implementation steps (MVP-friendly)</h2>
+      <div class="steps">
+        <div class="step">
+          <b>1) Discover</b>
+          <div class="muted">Define the process, triggers, required data fields, roles, approvals, and success metrics.</div>
+          <ul class="list">
+            <li>Process map: current vs target</li>
+            <li>Data map: sources, fields, ownership</li>
+            <li>Controls: approvals, exceptions</li>
+          </ul>
+        </div>
+        <div class="step">
+          <b>2) Connect</b>
+          <div class="muted">Connect systems using APIs, webhooks, and secure credentials.</div>
+          <ul class="list">
+            <li>ERP / CRM / Email / WhatsApp / Database</li>
+            <li>Access method: API key, OAuth, service account</li>
+            <li>Least-privilege permissions</li>
+          </ul>
+        </div>
+        <div class="step">
+          <b>3) Orchestrate</b>
+          <div class="muted">Build workflows that route tasks, validate data, and handle retries safely.</div>
+          <ul class="list">
+            <li>Routing rules (owner/region/product)</li>
+            <li>Validation (required fields, formats)</li>
+            <li>Retries + fallback channels</li>
+          </ul>
+        </div>
+        <div class="step">
+          <b>4) Govern</b>
+          <div class="muted">Add approvals, audit logs, role-based access, and secrets management.</div>
+          <ul class="list">
+            <li>Approval for sensitive actions (discount, credit, price)</li>
+            <li>Audit log of runs + changes</li>
+            <li>Separate test vs production</li>
+          </ul>
+        </div>
+        <div class="step">
+          <b>5) Measure</b>
+          <div class="muted">Track ROI using simple, business-owned metrics.</div>
+          <ul class="list">
+            <li>Hours saved per month</li>
+            <li>Error reduction / rework avoided</li>
+            <li>Cycle time and conversion lift</li>
+          </ul>
+        </div>
+        <div class="step">
+          <b>6) Improve</b>
+          <div class="muted">Stabilize, document, then expand to the next workflow.</div>
+          <ul class="list">
+            <li>Runbooks + alerts</li>
+            <li>Change control</li>
+            <li>Roadmap for next workflows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="panel">
+        <h2 style="margin:0 0 10px">What SME Owners care about</h2>
+        <ul class="list">
+          <li>Time saved and faster cycle time</li>
+          <li>Fewer mistakes from manual work</li>
+          <li>More leads converted through consistent follow-up</li>
+          <li>Better stock movement through triggered campaigns</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Tip: Start with one workflow that saves time weekly (lead routing or invoicing reminders) and measure the benefit.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin:0 0 10px">What IT Managers care about</h2>
+        <ul class="list">
+          <li>Security: credentials, least privilege, data boundaries</li>
+          <li>Governance: approvals, audit logs, change control</li>
+          <li>Reliability: retries, monitoring, exception handling</li>
+          <li>Integration patterns: API/webhook, data mapping</li>
+        </ul>
+        <p class="mini" style="margin-top:10px">
+          Tip: Define “who can change what” early. It prevents workflow sprawl and production surprises.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="panel">
+        <h2 style="margin:0 0 10px">FAQ (AEO)</h2>
+
+        <details>
+          <summary>How long does an MVP rollout take?</summary>
+          <div class="muted">Often 2–4 weeks depending on integrations, approvals, and data readiness.</div>
+        </details>
+
+        <details>
+          <summary>What is needed from our team?</summary>
+          <div class="muted">Access to systems (API credentials), a process owner, and agreement on roles, approvals, and success metrics.</div>
+        </details>
+
+        <details>
+          <summary>How do you handle failures or missing data?</summary>
+          <div class="muted">Workflows include validation, retries, and exception routing so issues are visible and actionable.</div>
+        </details>
+
+        <details>
+          <summary>Can you start without changing our existing ERP?</summary>
+          <div class="muted">Yes. Most workflows integrate via APIs/webhooks and do not require ERP customization to start.</div>
+        </details>
+
+        <p class="muted" style="margin-top:12px">
+          Next: <a href="/security.html">Security</a> · <a href="/integrations.html">Integrations</a> · <a href="/compare.html">Compare</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin:0 0 10px">Want a workflow map for your business?</h2>
+      <p class="muted" style="margin:0 0 14px">Share your systems and your top 1–2 processes. We’ll propose an MVP workflow blueprint.</p>
+      <a class="btn primary" href="mailto:hello@aigrownexus.com?subject=AIGrow%20Nexus%20Workflow%20Map%20Request">Request Workflow Map</a>
+    </section>
+
+    <footer>
+      © <span id="y"></span> AIGrow Nexus · <a href="mailto:hello@aigrownexus.com">hello@aigrownexus.com</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </main>
+</body>
+</html>
